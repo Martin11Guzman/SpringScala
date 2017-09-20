@@ -1,6 +1,4 @@
 import javax.servlet.annotation.WebServlet
-
-import org.apache.catalina.servlets.WebdavServlet
 import org.springframework.boot.web.servlet.ServletRegistrationBean
 import org.springframework.context.annotation.{Bean, Configuration}
 
