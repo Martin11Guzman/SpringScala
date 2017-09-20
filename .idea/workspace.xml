@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4bcf410-212b-4f75-81b0-5c132c245dd9" name="Default" comment="Made it RESTful">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringScala/src/main/scala/WebSecurityConfig.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringScala/src/main/scala/SwaggerConfig.scala" afterPath="$PROJECT_DIR$/SpringScala/src/main/scala/SwaggerConfig.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringScala/src/main/scala/UserService.scala" afterPath="$PROJECT_DIR$/SpringScala/src/main/scala/UserService.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/SpringScala/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,37 +14,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserService.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserService.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpringScala/src/main/scala/UserService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="462">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="H2Config.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringScala/src/main/scala/H2Config.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSecurityConfig.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SpringScala/src/main/scala/WebSecurityConfig.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,13 +40,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SpringScala/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringScala/src/main/scala/UserService.scala" />
         <option value="$PROJECT_DIR$/SpringScala/src/main/scala/UserController" />
         <option value="$PROJECT_DIR$/SpringScala/src/main/scala/UserRepository.scala" />
         <option value="$PROJECT_DIR$/SpringScala/src/main/scala/Users.scala" />
         <option value="$PROJECT_DIR$/SpringScala/src/main/scala/H2Config.scala" />
         <option value="$PROJECT_DIR$/SpringScala/src/main/scala/SwaggerConfig.scala" />
         <option value="$PROJECT_DIR$/SpringScala/src/main/scala/WebSecurityConfig.scala" />
+        <option value="$PROJECT_DIR$/SpringScala/src/main/scala/UserService.scala" />
       </list>
     </option>
   </component>
@@ -385,12 +359,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringScala/src/main/scala/UserService.scala">
+    <entry file="file://$PROJECT_DIR$/SpringScala/src/main/scala/WebSecurityConfig.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="598">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding>
-            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -405,12 +379,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringScala/src/main/scala/WebSecurityConfig.scala">
+    <entry file="file://$PROJECT_DIR$/SpringScala/src/main/scala/UserService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        <state relative-caret-position="462">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
