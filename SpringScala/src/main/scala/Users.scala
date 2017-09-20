@@ -21,5 +21,5 @@ class Users extends Serializable {
   @BeanProperty
   @Column(name = "enabled")
   var enabled: Boolean = _
-  
+
 }
