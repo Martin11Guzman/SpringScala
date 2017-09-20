@@ -1,6 +1,5 @@
-import org.springframework.data.jpa.repository.support.CrudMethodMetadata
+import com.sun.corba.se.spi.activation.Repository
 import org.springframework.data.repository.CrudRepository
-import org.springframework.stereotype.Repository
 
 @Repository
 trait UserRepository extends CrudRepository[Users, Long] {
