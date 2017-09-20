@@ -1,12 +1,11 @@
-import javax.activation.DataSource
-
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
-import org.springframework.security.config.annotation.web.configuration.{EnableWebSecurity, WebSecurityConfigurerAdapter}
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl
+import javax.sql.DataSource
 
 
 //  This Spring security configuration enables basic HTTP authentication. HTTP authentication is required to access the APIs after this change.
@@ -15,7 +14,7 @@ import org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-class WebSecurityConfig(@Autowired val dataSource: DataSource) extends WebSecurityConfigurerAdapter {
+class WebSecurityConfig(val dataSource: DataSource) extends WebSecurityConfigurerAdapter {
   override def configure(http: HttpSecurity) = {
     http.authorizeRequests.antMatchers("/console", "/console/**", "/console/", "/swagger-ui.html", "/**/*.css", "/**/*.js", "/**/*.png", "/configuration/**", "/swagger-resources", "/v2/**").permitAll
     http.authorizeRequests.anyRequest.authenticated
@@ -24,9 +23,11 @@ class WebSecurityConfig(@Autowired val dataSource: DataSource) extends WebSecuri
     http.httpBasic
   }
 
-  @Bean override def userDetailsService: UserDetailsService = {
+  @Bean
+  override def userDetailsService: UserDetailsService = {
     val manager = new JdbcDaoImpl
     manager.setDataSource(dataSource)
     manager
   }
+
 }

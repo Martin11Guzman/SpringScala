@@ -1,12 +1,17 @@
-import javax.persistence.{Column, Entity, GeneratedValue}
-
-import com.fasterxml.jackson.annotation.JsonTypeInfo.Id
-import com.fasterxml.jackson.databind.BeanProperty
+import scala.beans.BeanProperty
+import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.Id
+import java.lang.Long
+import java.io.Serializable
+import javax.persistence.GenerationType
+import javax.persistence.Column
 
 @Entity
 class Users extends Serializable {
+
   @Id
-  @GeneratedValue
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   @BeanProperty
   var id: Long = _
 
